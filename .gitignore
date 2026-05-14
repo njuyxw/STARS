@@ -1,0 +1,9 @@
+# Ouro experiment outputs and model weights
+/ouro_experiment/outputs/
+/ouro_experiment/Ouro-1.4B/
+
+# Train addition logs and weights
+/train_addition/logs/
+/train_addition/primary_logs/
+/train_addition/random_logs/
+/train_addition/reglogs/

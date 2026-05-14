@@ -1,0 +1,37 @@
+name: ouro
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  # Core scientific computing
+  - numpy
+  - matplotlib
+  - tqdm
+  - pandas
+  # ML and training
+  - scikit-learn
+  - scipy
+  - sympy
+  - pytorch>=2.0
+  - torchvision
+  - torchaudio
+  - pip:
+      # HuggingFace ecosystem
+      - transformers>=4.50.0
+      - datasets>=3.0.0
+      - accelerate>=1.0.0
+      - tokenizers>=0.20.0
+      - huggingface_hub
+      # Training utilities
+      - jsonargparse
+      # Evaluation
+      - lm-eval>=0.4.0
+      # vLLM (for Ouro eval; requires compatible CUDA version)
+      # - vllm>=0.8.0
+      # Additional utilities
+      - sentencepiece
+      - einops
+      - safetensors
